@@ -6,7 +6,6 @@
  */
 int main(void)
 {
-char world[50] = "Programming is like building a multilingual puzzle";
-puts(world);
+puts = "\"Programming is like building a multilingual puzzle";
 return (0);
 }
