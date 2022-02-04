@@ -8,14 +8,14 @@
  */
 int main(void)
 {
-char ch, n;	
-ch='a';
-while(ch<='z')
+char ch, n;
+ch = 'a';
+while (ch <= 'z')
 {
 putchar (ch);
 ch++;
 }
-n='\n';
+n = '\n';
 putchar (n);
 return (0);
 }
