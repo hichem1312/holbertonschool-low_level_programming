@@ -18,12 +18,12 @@ while (b <= '9')
 c = b+1;
 while (c <= '9')
 {
-if (a != b && a != c && b != c )
+if (a != b && a != c && b != c)
 {
 putchar(a);
 putchar(b);
 putchar(c);
-if (a+b+c != 168)
+if (a + b + c != 168)
 {
 putchar(',');
 putchar(' ');
