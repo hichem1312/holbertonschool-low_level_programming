@@ -15,13 +15,13 @@ while (a <= '9')
 b = '0';
 while (b <= '9')
 {
-c = a;
+c = '0';
 while (c <= '9')
 {
 d = '0';
 while (d <= '9')
 {
-if (a + b != c + d || c == b)
+if ((a < c) || ((a == c) && (b < d)))
 {
 putchar(a);
 putchar(b);
