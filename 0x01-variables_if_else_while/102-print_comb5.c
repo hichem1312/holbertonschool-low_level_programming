@@ -23,16 +23,16 @@ while (d <= '9')
 {
 if ((a < c) || ((a == c) &&(b < d)))
 {
-if (!(d == '1' && c == '0'))
-{
-putchar(',');
-putchar(' ');
-}
 putchar(a);
 putchar(b);
 putchar(' ');
 putchar(c);
 putchar(d);
+if (a + b + c + d != 227 || a != '9')
+{
+putchar(',');
+putchar(' ');
+}
 }
 d++;
 }
