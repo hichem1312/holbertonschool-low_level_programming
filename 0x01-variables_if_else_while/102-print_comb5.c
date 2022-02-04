@@ -21,7 +21,7 @@ while (c <= '9')
 d = '0';
 while (d <= '9')
 {
-if ((a < c) || ((a == c) && (b < d)))
+if ((a < c) || ((a == c)&&(b < d)))
 {
 putchar(a);
 putchar(b);
