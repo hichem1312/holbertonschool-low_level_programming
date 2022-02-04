@@ -20,7 +20,7 @@ if (a != b)
 {
 putchar(a);
 putchar(b);
-if (a+b != 113)
+if (a + b != 113)
 {
 putchar(',');
 putchar(' ');
