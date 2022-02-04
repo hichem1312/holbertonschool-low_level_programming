@@ -16,12 +16,15 @@ while (a != '9')
 b = x;
 while (b <= '9')
 {
-if (a != b )
+if (a != b)
 {
 putchar(a);
 putchar(b);
+if (a+b != 113)
+{
 putchar(',');
 putchar(' ');
+}
 }
 b++;
 }
