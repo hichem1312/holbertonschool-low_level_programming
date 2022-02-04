@@ -18,10 +18,10 @@ while (b <= '9')
 c = a;
 while (c <= '9')
 {
-d = b + 1;
+d = '0';
 while (d <= '9')
 {
-if (a + b != c + d)
+if (a + b != c + d || c == b)
 {
 putchar(a);
 putchar(b);
