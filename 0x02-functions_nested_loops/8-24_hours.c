@@ -17,7 +17,7 @@ for (k = '0'; k <= '5'; k++)
 {
 for (l = '0'; l <= '9'; l++)
 {
-if (
+if ((i < '2' && j <= '9') || (i == '2' && j <= '3'))
 _putchar(i);
 _putchar(j);
 _putchar(':');
