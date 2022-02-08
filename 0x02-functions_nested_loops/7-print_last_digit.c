@@ -7,7 +7,7 @@
  */
 int print_last_digit(int i)
 {
-int e, v;
+int e, v, b;
 if (i == 0)
 {
 _putchar('0');
@@ -23,7 +23,8 @@ return (v);
 else
 {
 v = i % 10;
-_putchar(v + 48);
-return (v + 48);
+b = v + 48;
+_putchar(b);
+return (b);
 }
 }
