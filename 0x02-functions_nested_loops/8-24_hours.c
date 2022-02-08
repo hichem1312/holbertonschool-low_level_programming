@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 /**
  * jack_bauer - test the sign of number
