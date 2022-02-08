@@ -11,14 +11,14 @@ int e, v, b;
 if (i == 0)
 {
 _putchar('0');
-return (0);
+return (98);
 }
 else if (i <= 0)
 {
 e = i * (-1);
 v = e % 10;
 _putchar(v + 48);
-return (v);
+return (v + 48);
 }
 else
 {
