@@ -17,8 +17,9 @@ else if (i <= 0)
 {
 e = i * (-1);
 v = e % 10;
-_putchar(v + 48);
-return (v + 48);
+b = v + 48;
+_putchar(b);
+return (b);
 }
 else
 {
