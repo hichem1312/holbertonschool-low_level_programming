@@ -5,5 +5,5 @@
 #include <stdio.h>
 #include <unistd.h>
 void print_alphabet(void);
-int main(void);
+int _putchar(char c);
 #endif
