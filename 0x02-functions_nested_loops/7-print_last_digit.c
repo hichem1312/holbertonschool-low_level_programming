@@ -18,13 +18,12 @@ else if (i <= 0)
 e = i * (-1);
 v = e % 10;
 _putchar(v + 48);
-return (v);
+return (v+48);
 }
 else
 {
 v = i % 10;
-v = v + 48;
-_putchar(v);
-return (v);
+_putchar(v+48);
+return (v+48);
 }
 }
