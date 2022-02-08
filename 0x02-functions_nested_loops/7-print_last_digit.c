@@ -11,7 +11,7 @@ int e, v, b;
 if (i == 0)
 {
 _putchar('0');
-return (98);
+return (48);
 }
 else if (i <= 0)
 {
