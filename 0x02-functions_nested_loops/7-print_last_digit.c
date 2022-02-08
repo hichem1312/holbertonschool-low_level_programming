@@ -7,7 +7,8 @@
  */
 int print_last_digit(int i)
 {
-int e, v, b;
+int v, b;
+unsigned long int e;
 if (i == 0)
 {
 _putchar('0');
