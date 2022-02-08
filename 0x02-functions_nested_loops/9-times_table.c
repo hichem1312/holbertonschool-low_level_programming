@@ -22,7 +22,10 @@ for (i = 0; i <= 9; i++)
 	}
 	else
 	{
+	if (j > 0)
+	{
 	_putchar(' ');
+	}
         _putchar(v + 48);
 	}
 	if (j != 9)
