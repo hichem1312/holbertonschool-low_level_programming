@@ -7,22 +7,23 @@
  */
 int print_last_digit(int i)
 {
-int e;
+int e, v;
 if (i == 0)
 {
-_putchar('0');
+return ('0');
 _putchar('0');
 }
 else if (i <= 0)
 {
 e = i * (-1);
 v = e % 10;
-_putchar(v);
+return (v);
 _putchar(v);
 }
 else
 {
 v = i % 10;
+return (v);
 _putchar(v);
-_putchar(v);
+}
 }
