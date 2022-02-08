@@ -23,7 +23,8 @@ return (v);
 else
 {
 v = i % 10;
-_putchar(v + 48);
+v = v + 48;
+_putchar(v);
 return (v);
 }
 }
