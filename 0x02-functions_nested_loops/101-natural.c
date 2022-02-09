@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * 
+ * return: always 0 (Success)
  */
 int main(void)
 {
@@ -15,5 +15,6 @@ if ((x % 3 == 0) || (x % 5 == 0))
 s += x;
 }
 }
-return (s);
+printf ("%d",s);
+return (0);
 }
