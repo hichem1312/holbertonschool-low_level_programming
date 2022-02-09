@@ -16,5 +16,6 @@ s += x;
 }
 }
 printf ("%d",s);
+printf ("/n");
 return (0);
 }
