@@ -6,24 +6,25 @@
  */
 int main(void)
 {
-int i;
+int i, som;
 long int s, nb, nb1;
 nb = 0;
 nb1 = 1;
-for (i = 0; i <= 50; i++)
+som = 0;
+for (i = 0; i <= 35; i++)
 {
 if (i >= 1)
 {
 s = nb + nb1;
 nb = nb1;
 nb1 = s;
-printf("%ld", s);
-if (i != 50)
+if (s % 2 == 0)
 {
-printf(", ");
+som += s;
 }
 }
 }
+printf("%d",som);
 printf("\n");
 return (0);
 }
