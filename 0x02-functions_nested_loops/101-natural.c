@@ -15,7 +15,6 @@ if ((x % 3 == 0) || (x % 5 == 0))
 s += x;
 }
 }
-printf ("%d",s);
-printf ("/n");
+printf("%d\n", s);
 return (0);
 }
