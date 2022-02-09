@@ -12,11 +12,12 @@ int i;
 printf("Infinite loop incoming :(\n");
 
 i = 0;
-
-while (i < 10) /*this command */
-{ /*this command */
-putchar(i); /*this command */
-}  /*this command */
+/**
+*	while (i < 10)
+*	{
+*		putchar(i);
+*	}
+*/
 
 printf("Infinite loop avoided! \\o/\n");
 
