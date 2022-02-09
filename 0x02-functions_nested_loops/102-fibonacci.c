@@ -17,7 +17,7 @@ if (i >= 1)
 s = nb + nb1;
 nb = nb1;
 nb1 = s;
-printf("%d", s);
+printf("%ld", s);
 if (i != 50)
 {
 printf(", ");
