@@ -6,20 +6,23 @@
  */
 int main(void)
 {
-int nb, nb1, s, i;
+int nb, nb1, i;
+long int s;
 nb = 0;
 nb1 = 1;
-for (i = 0; i < 50; i++)
+for (i = 0; i <= 50; i++)
 {
-if (i <= 1)
-s = i;
-else
+if (i >= 1)
 {
 s = nb + nb1;
 nb = nb1;
 nb1 = s;
+printf("%d", s);
+if (i != 50)
+{
+printf(", ");
 }
-printf("%d, ", s);
+}
 }
 return (0);
 }
