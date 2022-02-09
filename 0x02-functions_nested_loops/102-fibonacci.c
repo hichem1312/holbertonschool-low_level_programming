@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-int n, nb, nb1, s, i;
+int nb, nb1, s, i;
 nb = 0;
 nb1 = 1;
-for (i = 0; i < n; i++)
+for (i = 0; i < 50; i++)
 {
 if (i <= 1)
 s = i;
