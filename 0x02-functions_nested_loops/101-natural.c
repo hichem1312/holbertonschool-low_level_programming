@@ -6,10 +6,10 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int addition(int a,int b)
+int addition(int a, int b)
 {
 int x, s;
-s = 0
+s = 0;
 for (x = 0 ; x <= 1024 ; x++)
 {
 if (x % 3 == 0)
