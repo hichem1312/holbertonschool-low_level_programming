@@ -18,7 +18,7 @@ while (i < 10) /*this command */
 putchar(i); /*this command */
 }  /*this command */
 
-printf("Infinite loop avoided! \\o/\n");
+printf("Infinite loop avoided! \\o/\n"); /*this command */
 
 return (0);
 }
