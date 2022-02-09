@@ -6,7 +6,7 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int addition(int a, b)
+int addition(int a,int b)
 {
 int x, s;
 s = 0
