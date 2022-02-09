@@ -20,5 +20,5 @@ if (x % 5 == 0)
 s += x;
 }
 }
-return (x);
+return (s);
 }
