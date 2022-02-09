@@ -18,7 +18,7 @@ s = nb + nb1;
 nb = nb1;
 nb1 = s;
 printf("%ld", s);
-if (i != 50)
+if (i != 98)
 {
 printf(", ");
 }
