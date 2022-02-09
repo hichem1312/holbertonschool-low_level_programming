@@ -1,11 +1,10 @@
-#include "main.h"
+#include<stdio.h>
 /**
- * addition - writes the character c to stdout
+ * main - Entry point
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: Always 0 (Success)
  */
-int addition(void)
+int main(void)
 {
 int x, s;
 s = 0;
