@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-int nb, nb1, i;
-long int s;
+int i;
+long int s, nb, nb1;
 nb = 0;
 nb1 = 1;
 for (i = 0; i <= 50; i++)
