@@ -19,7 +19,7 @@ s = nb + nb1;
 nb = nb1;
 nb1 = s;
 }
-printf("%d\n", s);
+printf("%d, ", s);
 }
 return (0);
 }
