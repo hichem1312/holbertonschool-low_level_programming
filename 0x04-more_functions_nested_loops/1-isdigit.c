@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * add - writes the character c to stdout
- * @a:integer
- * @b:integer
+ * _isdigit - writes the character c to stdout
+ * @c:integer
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
