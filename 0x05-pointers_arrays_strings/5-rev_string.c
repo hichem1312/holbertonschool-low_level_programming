@@ -20,5 +20,5 @@ for (j = l - 1; j >= 0; j--)
 p[u] = (s[j]);
 u++;
 }
-strcpy(s,p);
+strcpy(s , p);
 }
