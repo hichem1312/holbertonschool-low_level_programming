@@ -12,18 +12,22 @@ int _atoi(char *s)
 int str = 0, i, c = 1;
 for (i = 0; s[i] != '\0'; i++)
 {
-if ((s[i] >= '0' && s[i] <= '9') && (s[i + 1] < '0' || s[i + 1] > '9'))
+if ((s[i] >= '0' && s[i] <= '9') && (s[i + 1] < '0' || s[i + 1] > '9') && str != 2147483647)
 {
 str = str *10 - '0' + s[i];
 return (str *c);
 }
-else if (s[i] >= '0' && s[i] <= '9')
+else if (s[i] >= '0' && s[i] <= '9' && str != 2147483647)
 {
 str = str *10 - '0' + s[i];
 }
 else if (s[i] == '-')
 {
 c *= -1;
+}
+else if (str == 2147483647)
+{
+return ((str * -1) -1);
 }
 }
 return (str * c);
