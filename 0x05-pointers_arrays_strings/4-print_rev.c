@@ -12,7 +12,7 @@ for (i = 0; s[i] != '\0'; i++)
 {
 l++;
 }
-for (j = l; j >= 0; j--)
+for (j = l - 1; j >= 0; j--)
 {
 _putchar(s[j]);
 }
