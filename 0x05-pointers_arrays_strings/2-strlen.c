@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * _strlen - writes the character c to stdout
- * @lengt:d
+ * @s:d
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
