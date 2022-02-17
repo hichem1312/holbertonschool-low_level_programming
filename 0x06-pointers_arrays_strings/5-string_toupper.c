@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * string_toupper - writes the character c to stdou
- * @t: 
+ * @t:string
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
