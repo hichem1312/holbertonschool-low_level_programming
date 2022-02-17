@@ -8,28 +8,17 @@
  */
 char *leet(char *s)
 {
-int i;
+int i, j;
+char ch[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+char sh[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 for (i = 0; s[i] != '\0'; i++)
 {
-if (s[i] == 'a' || s[i] == 'A')
+for (j = 0; j < 10; j++)
 {
-s[i] = '4';
+if (s[i] == ch[j])
+{
+s[i] = sh[j];
 }
-else if (s[i] == 'e' || s[i] == 'E')
-{
-s[i] = '3';
-}
-else if (s[i] == 'o' || s[i] == 'O')
-{
-s[i] = '0';
-}
-else if (s[i] == 't' || s[i] == 'T')
-{
-s[i] = '7';
-}
-else if (s[i] == 'l' || s[i] == 'L')
-{
-s[i] = '1';
 }
 }
 return (s);
