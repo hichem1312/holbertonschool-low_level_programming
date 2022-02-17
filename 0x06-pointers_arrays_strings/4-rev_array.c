@@ -9,12 +9,22 @@
  */
 void reverse_array(int *a, int n)
 {
-int i;
-for (i = n - 1; i >= 0; i--)
+int i, s, x;
+s = 0;
+for (i = n - 1; i >= n / 2; i--)
 {
-if (i != n - 1)
-printf(", ");
-printf("%d", a[i]);
+if (i > s)
+{
+x = a[i];
+a[i] = a[s];
+a[s] = x;
 }
-printf("\n");
+else if (s < i)
+{
+x = a[s];
+a[s] = a[i];
+a[i] = x;
+}
+s++;
+}
 }
