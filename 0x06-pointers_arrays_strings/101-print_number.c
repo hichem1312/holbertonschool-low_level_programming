@@ -7,8 +7,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 void print_number(int n)
-{
-	int x, i, k, r = 1;
+{int x, k, r = 1;
 
 	if (n == 0)
 	{
@@ -39,12 +38,10 @@ void print_number(int n)
 			_putchar(k + 48);
 			_putchar(48);
 			r /= 10;
-			i++;
 		}
 		else if (n == -2147483648 && k == 7 && r == 0)
 		{
-			k = k + 1;
-			_putchar(k + 48);
+			_putchar(k + 49);
 		}
 		else
 		{
