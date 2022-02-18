@@ -8,41 +8,47 @@
  */
 void print_number(int n)
 {
-int x, s, k, i, r = 1;
+	int x, i, k, r = 1;
 
-if (n == 0)
-{
-_putchar(48);
-return;
-}
-if (n < 0)
-{
-n = -n;
-_putchar('-');
-}
-x = n;
-s = 0;
-while (x >= r)
-{
-r = r * 10;
-s += 1;
-}
-r /= 10;
-for (i = 0; i < s; i++)
-{
-k = n / r;
-n = n % r;
-r /= 10;
-if (n < r)
-{
-_putchar(k + 48);
-_putchar(48);
-r /= 10;
-i++;
-}
-else
-{
-_putchar(k + 48);
-}
-}
+	if (n == 0)
+	{
+		_putchar(48);
+		return;
+	}
+	x = n;
+	if (x == -2147483648)
+	{
+		x = x + 1;
+	}
+	if (n < 0)
+	{
+		x = -x;
+		_putchar('-');
+	}
+	while (r < 1000000000 && (x - (r * 10) >= 0))
+	{
+		r = r * 10;
+	}
+	while (x > 0)
+	{
+		k = x / r;
+		x = x % r;
+		r /= 10;
+		if (x < r)
+		{
+			_putchar(k + 48);
+			_putchar(48);
+			r /= 10;
+			i++;
+		}
+		else if (n == -2147483648 && k == 7 && r == 0)
+		{
+			k = k + 1;
+			_putchar(k + 48);
+		}
+		else
+		{
+			_putchar(k + 48);
+		}
+	}
 }
