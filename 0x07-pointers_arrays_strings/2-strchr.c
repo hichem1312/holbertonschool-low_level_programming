@@ -14,7 +14,9 @@ char ch[1000000];
 x = 0;
 for (i = 0; i < l && x == 0; i++)
 {
-if (c == s[i])
+if (c == '\0')
+return ('\0');
+else if (c == s[i])
 {
 for (j = i; j <= l; j++)
 {
@@ -23,11 +25,6 @@ x += 1;
 }
 }
 }
-if (x == 0)
-return('\0');
-else
-{
 s = ch;
 return (s);
-}
 }
