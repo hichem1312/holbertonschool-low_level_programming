@@ -4,7 +4,6 @@
  * print_diagsums - copy tow strings
  * @a:string
  * @size:string
- * @n:integer
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -12,7 +11,7 @@ void print_diagsums(int *a, int size)
 {
 	int i, s1, s2, j;
 i = 0;
-j = size -1;
+j = size - 1;
 s1 = 0;
 s2 = 0;
 	while (i < (size * size))
