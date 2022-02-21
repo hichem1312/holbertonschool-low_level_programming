@@ -25,9 +25,14 @@ i = l;
 m = 0;
 for (k = v; k < l1; k++)
 {
-g[m] = haystack [k];
+g[m] = haystack[k];
 m++;
 }
+if (haystack != g)
+{
 haystack = g;
 return (haystack);
+}
+else
+return (NULL);
 }
