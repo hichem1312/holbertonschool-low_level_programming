@@ -23,6 +23,11 @@ x += 1;
 }
 }
 }
+if (x != 0)
+{
 s = ch;
 return (s);
+}
+else
+return('\0');
 }
