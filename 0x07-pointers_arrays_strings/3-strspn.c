@@ -21,13 +21,13 @@ j++;
 }
 if (s[i] == accept[j])
 {
-u += 1;
+	u += 1;
 }
 else
 {
-i = l;
-j = l1;
+	i = l;
+	j = l1;
 }
 }
-return (u); 
+return (u);
 }
