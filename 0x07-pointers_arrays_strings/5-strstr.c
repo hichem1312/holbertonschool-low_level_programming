@@ -41,13 +41,12 @@ if (x == 1)
 {
 m = 0;
 for (y = v; y < l1; y++)
-{
-g[m] = haystack[y];
+{g[m] = haystack[y];
 m++;
 }
 haystack = g;
 return (haystack);
 }
 else
-return ("nil");
+return (NULL);
 }
