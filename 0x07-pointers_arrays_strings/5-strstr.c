@@ -9,8 +9,8 @@
  */
 char *_strstr(char *haystack, char *needle)
 {char g[10000];
-int s, p, j, i, y, v = 0, l = strlen(needle), 
-    l1 = strlen(haystack), k, m;
+int x = 0, s, p, j, i, y, v = 0, l = strlen(needle),
+l1 = strlen(haystack), k, m;
 for (i = 0; i < l; i++)
 {
 for (j = 0; j < l1; j++)
@@ -31,11 +31,14 @@ if (s == l)
 v = j;
 i = l;
 j = l1;
+x = 1;
 }
 }
 }
 }
 }
+if (x == 1)
+{
 m = 0;
 for (y = v; y < l1; y++)
 {
@@ -44,4 +47,7 @@ m++;
 }
 haystack = g;
 return (haystack);
+}
+else
+return ("nil");
 }
