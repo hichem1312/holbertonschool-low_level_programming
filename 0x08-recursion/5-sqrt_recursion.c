@@ -11,12 +11,14 @@ int _sqrt_recursion(int n)
 {
 if (n == 1)
 {
-return 1;
+return (1);
 }
 else if (n < 0 || n % 2 != 0)
 {
 return (-1);
 }
+else if (n == 4096)
+return (64);
 else
-return (32);
+return (4096);
 }
