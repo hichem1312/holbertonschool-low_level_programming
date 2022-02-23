@@ -12,3 +12,4 @@ if (n % 2 == 0 || n < 2)
 return (0);
 else
 return (1);
+}
