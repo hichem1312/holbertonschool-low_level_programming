@@ -26,10 +26,11 @@ argc = 0;
 if (argc > 0)
 {
 printf("%d\n", s);
+return (0);
 }
-if (argc == 0)
+else
 {
 printf("Error\n");
+return (atoi(argv[i]));
 }
-return (0);
 }
