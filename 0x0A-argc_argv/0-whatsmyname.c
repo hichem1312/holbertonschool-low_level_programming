@@ -7,7 +7,7 @@
  *@argv:string
  * Return: Always 0 (Success)
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 argc = 0;
 printf("%s\n", argv[argc]);
