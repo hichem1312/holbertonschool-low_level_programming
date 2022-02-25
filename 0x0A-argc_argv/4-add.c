@@ -21,6 +21,7 @@ s += atoi(argv[i]);
 else
 {
 argc = 0;
+break;
 }
 }
 if (argc > 0)
