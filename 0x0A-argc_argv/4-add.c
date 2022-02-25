@@ -11,13 +11,12 @@
  */
 int main(int argc, char *argv[])
 {
-int s, i;
+int i, s = 0, x = 0;
 for (i = 1; i < argc; i++)
 {
-if (atoi(argv[i]) > 0)
-{
-s += atoi(argv[i]);
-}
+x = atoi(argv[i]);
+if (x > 0)
+s = s + x;
 else
 {
 argc = 0;
@@ -32,6 +31,6 @@ return (0);
 else
 {
 printf("Error\n");
-return (atoi(argv[i]));
+return (x);
 }
 }
