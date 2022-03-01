@@ -9,7 +9,6 @@
  */
 char *_strdup(char *str)
 {
-unsigned int size = strlen(str);
 unsigned int i;
 char *p;
 if (str == NULL)
@@ -18,7 +17,8 @@ if (str == NULL)
 }
 else
 {
-	p = malloc(sizeof(str) * (size + 1));
+	unsigned int size = strlen(str);
+	p = malloc(sizeof(str) * (size));
 		if (p == NULL)
 		{
 			return (NULL);
