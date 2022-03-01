@@ -25,7 +25,7 @@ for (i = 0; i < height; i++)
 	p[i] = malloc(sizeof(int) * width);
 	if (p[i] == NULL)
 	{
-		for (x = i; x <= 0; x--)
+		for (x = i; x >= 0; x--)
 		{
 			free(p[x]);
 		}
