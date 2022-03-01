@@ -10,10 +10,11 @@
  */
 char *argstostr(int ac, char **av)
 { 
-int i;
-int l;
+unsigned int i, l;
 char * str;
 l = 1;
+if (ac == 0 || av == NULL)
+	return (NULL);
 for (i = 0; i < ac; i++)
 {
 	l = strlen(av[i]) + l;
