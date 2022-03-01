@@ -10,18 +10,18 @@
  */
 char *argstostr(int ac, char **av)
 { 
-int i;
-unsigned int l;
-char * str;
-l = 1;
+unsigned int l, i, a;
+char *str;
 if (ac == 0 || av == NULL)
 	return (NULL);
-for (i = 0; i < ac; i++)
+l = 1;
+a = ac;
+for (i = 0; i < a; i++)
 {
 	l = strlen(av[i]) + l;
 }
 str = malloc(sizeof(char) * l);
-for (i = 0; i < ac; i++)
+for (i = 0; i < a; i++)
 {
 	strcat(str, av[i]);
 	strcat(str, "\n");
