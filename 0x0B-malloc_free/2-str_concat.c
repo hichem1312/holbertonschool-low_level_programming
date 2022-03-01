@@ -11,15 +11,15 @@
 char *str_concat(char *s1, char *s2)
 {
 int k, i, j;
-int s = strlen(s1);
-int t = strlen(s2);
+int s = 0;
+int t = 0;
 char *p;
-if (s == 0 || t == 0)
+if (s1 != NULL)
+	s = strlen(s1);
+if (s2 != NULL)
 {
-	return (NULL);
+	t = strlen(s2);
 }
-else
-{
 	p = malloc(sizeof(char) * ((s + t) + 1));
 		if (p == NULL)
 			return (NULL);
@@ -34,4 +34,4 @@ else
 		p[k] = s2[j];
 	}
 	return (p);
-}}
+}
