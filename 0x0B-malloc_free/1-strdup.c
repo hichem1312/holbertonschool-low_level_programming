@@ -19,8 +19,8 @@ if (str == NULL)
 else
 {
 	int size = strlen(str);
-	
-	p = malloc(sizeof(char) * (size + 1));
+
+	p = malloc(sizeof(char) * (size));
 		if (p == NULL)
 		{
 			return (NULL);
