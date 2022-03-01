@@ -18,7 +18,7 @@ if (str == NULL)
 }
 else
 {
-	p = malloc(sizeof(str) * (size));
+	p = malloc(sizeof(str) * (size + 1));
 		if (p == NULL)
 		{
 			return (NULL);
