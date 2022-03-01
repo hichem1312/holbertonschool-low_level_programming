@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 char *argstostr(int ac, char **av)
-{ 
+{
 unsigned int l, i, a;
 char *str;
 if (ac == 0 || av == NULL)
