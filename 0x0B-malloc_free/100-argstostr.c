@@ -23,6 +23,7 @@ for (i = 0; i < a; i++)
 str = malloc(sizeof(char *) * l);
 if (str == NULL)
 {
+free(str);
 return (NULL);
 }
 k = 0;
