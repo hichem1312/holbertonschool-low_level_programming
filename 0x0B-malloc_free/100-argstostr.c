@@ -20,7 +20,7 @@ for (i = 0; i < a; i++)
 {
 	l = strlen(av[i]) + l;
 }
-str = malloc(sizeof(char) * l);
+str = malloc(sizeof(char *) * l);
 for (i = 0; i < a; i++)
 {
 	strcat(str, av[i]);
