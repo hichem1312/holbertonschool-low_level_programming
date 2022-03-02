@@ -14,7 +14,7 @@ unsigned int l, i, a;
 char *str;
 if (ac == 0 || av == NULL)
 	return (NULL);
-l = 1;
+l = 0;
 a = ac;
 for (i = 0; i < a; i++)
 {
