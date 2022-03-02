@@ -20,7 +20,7 @@ for (i = 0; i < a; i++)
 {
 	l = strlen(av[i]) + l;
 }
-str = malloc(l);
+*str = malloc(l);
 if (str == NULL)
 {
 return (NULL);
