@@ -22,7 +22,7 @@ for (i = 0; i < ac; i++)
 		s++;
 	}
 }
-str = malloc(sizeof(char) * (s + ac + 1));
+str = malloc(s + ac + 1);
 if (str == NULL)
 {
 free(str);
