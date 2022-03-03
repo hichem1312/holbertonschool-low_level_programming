@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _calloc - Entry point
- *@nmamb:unsingedint
+ *@nmemb:unsingedint
  *@size:size
  * Return: Always 0 (Success)
  */
@@ -11,11 +11,11 @@ char *ch;
 unsigned int i;
 
 if (nmemb == 0 || size == 0)
-	return(NULL);
+	return (NULL);
 ch = malloc(size * nmemb);
 if (!ch)
-	return(NULL);
+	return (NULL);
 for (i = 0; i < (size * nmemb); i++)
 	ch[i] = 0;
-return(ch);
+return (ch);
 }
