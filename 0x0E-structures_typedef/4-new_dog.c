@@ -3,19 +3,6 @@
 #include <stdlib.h>
 #include "string.h"
 /**
- * free_d - d
- * @d: f
- **/
-void free_d(dog_t *d)
-{
-	if (d != NULL)
-	{
-	free(d->name);
-	free(d->owner);
-	free(d);
-	}
-}
-/**
  *new_dog - Entry point
  *@name:char
  *@age:integer
@@ -42,7 +29,7 @@ if ((name != NULL) && (age >= 0) && (owner != NULL))
 	{
 		free(o);
 		free(n);
-		free_d(d);
+		free(d);
 		return (NULL);
 	}
 	d->name = n;
