@@ -3,13 +3,25 @@
 #include <stdlib.h>
 #include "string.h"
 /**
+ * free_d - d
+ * @d: f
+ **/
+void free_d(dog_t *d)
+{
+	if (d != NULL)
+	{
+	free(d->name);
+	free(d->owner);
+	free(d);
+	}
+}
+/**
  *new_dog - Entry point
  *@name:char
  *@age:integer
  *@owner:n
  * Return: Always 0 (Success)
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 struct dog *d;
@@ -21,7 +33,7 @@ if ((name != NULL) && (age >= 0) && (owner != NULL))
 	if (name != NULL)
 		n = strdup(name);
 	else
-		return(NULL);
+		return (NULL);
 	if (owner != NULL)
 		o = strdup(owner);
 	else
@@ -30,7 +42,7 @@ if ((name != NULL) && (age >= 0) && (owner != NULL))
 	{
 		free(o);
 		free(n);
-		free(d);
+		free_d(d);
 		return (NULL);
 	}
 	d->name = n;
