@@ -17,7 +17,7 @@ if (n == 0)
 	printf("\n");
 	exit(0);
 }
-va_start(x,n);
+va_start(x, n);
 for (i = 0; i < n; i++)
 {
 	d = va_arg(x, int);
@@ -27,5 +27,5 @@ for (i = 0; i < n; i++)
 	else if (separator != NULL)
 		printf("%s", separator);
 }
-va_end (x);
+va_end(x);
 }
