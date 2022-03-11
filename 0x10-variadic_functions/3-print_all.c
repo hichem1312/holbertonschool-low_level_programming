@@ -30,6 +30,7 @@ void print_float(va_list x)
 void print_string(va_list x)
 {
 	char *s;
+
 	s = va_arg(x, char *);
 	if (s == NULL)
 		s = "(nil)";
@@ -41,12 +42,30 @@ void print_string(va_list x)
  */
 void print_all(const char * const format, ...)
 {
-int i, j;
-va_list x
-op_t tab[] = {
+int i = 0, j;
+va_list x;
+char *y;
+str tab[] = {
 	{'c', print_char},
 	{'i', print_int},
 	{'f', print_float},
 	{'s', print_string},
 };
-
+va_start(x, format);
+y = "";
+while ((format != NULL) && (format[i] != '\0'))
+{
+	j = 0;
+	while ((j < 4) && (format[i] != tab[j].ch))
+		j++;
+	if (format[i] == tab[j].ch)
+	{
+		printf("%s", y);
+		y = ", ";
+		tab[j].f(x);
+	}
+	y = ", ";
+	i++;
+}
+printf("\n");
+}
