@@ -64,7 +64,6 @@ while ((format != NULL) && (format[i] != '\0'))
 		y = ", ";
 		tab[j].f(x);
 	}
-	y = ", ";
 	i++;
 }
 printf("\n");
