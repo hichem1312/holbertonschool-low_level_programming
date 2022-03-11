@@ -3,7 +3,7 @@
 /**
  * sum_them_all - p
  * @n: int
- * @st: st
+ * @op: st
  * Return: int
  */
 int sum_them_all(const unsigned int n, ...)
