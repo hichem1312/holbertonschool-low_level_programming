@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
- * print_list - print list
- * @h: str
+ * add_node - print list
+ * @head: p
+ * @str: p
  * Return: number of nodes
  */
 list_t *add_node(list_t **head, const char *str)
