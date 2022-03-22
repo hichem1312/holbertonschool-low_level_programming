@@ -1,5 +1,5 @@
 #include "lists.h"
-/*
+/**
  * add_nodeint_end- g
  * @head: v
  * @n: v
@@ -13,11 +13,14 @@ if (!new)
 	return (NULL);
 new->n = n;
 new->next = NULL;
-ptr = *head;
-while (ptr->next != NULL)
+if (!(*head))
 {
-	ptr = ptr->next;
+*head = new;
+return (new);
 }
+ptr = *head;
+while (ptr->next)
+ptr = ptr->next;
 ptr->next = new;
-return (*head);
+return (ptr);
 }
