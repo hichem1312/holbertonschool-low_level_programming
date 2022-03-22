@@ -1,19 +1,19 @@
 #include "lists.h"
 /**
- * free_listint - f
+ * free_listint2 - f
  * @head: v
  * Return: v
  */
-void free_listint(listint_t *head)
+void free_listint2(listint_t **head)
 {
-if (!head)
+if (!*head)
 return;
 else
 {
-while (head->next != NULL)
+while ((*head)->next != NULL)
 {
-	free(head);
-	head = head->next;
+	free(*head);
+	*head = (*head)->next;
 }
 *head = NULL;
 }
