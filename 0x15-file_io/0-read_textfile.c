@@ -15,7 +15,7 @@ a = open(filename, O_RDONLY);
 if (a == -1)
 	return (0);
 b = read(a, buf, letters);
-write(a, buf, letters);
+write(STDOUT_FILENO, buf, b);
 close(a);
 return (b);
 }
