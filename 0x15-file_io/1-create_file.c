@@ -16,8 +16,6 @@ if (n == -1)
 	return (-1);
 if (text_content)
 	write(n, text_content, strlen(text_content));
-else
-	return (-1);
 close(n);
 return (1);
 }
