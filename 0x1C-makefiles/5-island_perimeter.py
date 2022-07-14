@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def side_count(grid, i, j):
     """Check for neighbours or nothing."""
     x = 4
