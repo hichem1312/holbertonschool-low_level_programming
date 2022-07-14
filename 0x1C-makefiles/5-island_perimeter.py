@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""counting the perimeter"""
+
+
 def side_count(grid, i, j):
-    """Check for neighbours or nothing."""
+    """count the sides"""
     x = 4
 
     if j > 0 and grid[i][j - 1] == 1:
@@ -19,11 +22,10 @@ def side_count(grid, i, j):
 
 
 def island_perimeter(grid):
-    """Get island perimmeter."""
+    """island perimeter"""
     perimeter_length = 0
     for i in range(0, len(grid)):
         for j in range(0, len(grid[i])):
             if (grid[i][j] == 1):
-                # print(check_grid(grid, i, j))
                 perimeter_length += side_count(grid, i, j)
     return perimeter_length
